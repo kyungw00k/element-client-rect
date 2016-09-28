@@ -1,6 +1,6 @@
 {
   "name": "element-client-rect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Returns the size of an element and its absolute position of the document.",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyungw00k/element-client-rect.git"
+    "url": "https://github.com/kyungw00k/element-client-rect.git"
   },
   "keywords": [
     "element",
@@ -28,6 +28,7 @@
     "zuul-ngrok": "^4.0.0"
   },
   "dependencies": {
+    "bounding-client-rect": "^1.0.5",
     "document-offset": "^1.0.4",
     "element-style": "^0.1.1"
   }

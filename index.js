@@ -5,7 +5,7 @@
 
 var elementStyle = require('element-style')
 var elementOffset = require('document-offset')
-var getBoundingClientRect = require('./polyfill')
+var boundingClientRect = require('bounding-client-rect');
 
 /**
  * Module exports.
@@ -45,3 +45,30 @@ function getElementClientRect(element) {
     }
 }
 
+
+/**
+ * Use `@webmodules/bounding-client-rect`
+ * If rect is null, use `offset` prefixed properties such as `offsetTop`.
+ *
+ * @param {Node} node
+ * @return {TextRectangle|Object}
+ */
+
+function getBoundingClientRect(node) {
+    var rect = boundingClientRect(node);
+
+    // `rect` is null in IE 8 and below 8
+    if (rect === null) {
+        rect = {
+            top: parseInt(node.offsetTop, 10),
+            left: parseInt(node.offsetLeft, 10),
+            width: parseInt(node.offsetWidth, 10),
+            height: parseInt(node.offsetHeight, 10)
+        }
+
+        rect.bottom = rect.top + rect.height
+        rect.right = rect.left + rect.width
+    }
+
+    return rect;
+}
