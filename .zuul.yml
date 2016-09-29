@@ -5,7 +5,9 @@ tunnel:
   proto: tcp
 browsers:
   - name: ie
-    version: 8..latest
+    version: 6..latest
+  - name: microsoftedge
+    version: latest
   - name: chrome
     version: latest
     platform: Windows 10

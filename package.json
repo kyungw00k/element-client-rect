@@ -1,6 +1,6 @@
 {
   "name": "element-client-rect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Returns the size of an element and its absolute position of the document.",
   "main": "index.js",
   "scripts": {

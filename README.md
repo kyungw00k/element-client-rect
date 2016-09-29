@@ -25,6 +25,14 @@ var rect = getElementClientRect(dom)
 // => {left: number, top: number, right: number, bottom: number, width: number, height: number}
 ```
 
+## Tested
+* IE 6+
+* Chrome latest
+* Safari latest
+* Firefox latest
+* iOS 8.1+ 
+* Android 4.0+
+
 ## License
 [MIT](https://kyungw00k.mit-license.org/)
 
