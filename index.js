@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 
-var elementOffset = require('document-offset')
+var elementOffset = require('./lib/document-offset')
 var boundingClientRect = require('bounding-client-rect')
 
 /**

@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "bounding-client-rect": "^1.0.5",
-    "document-offset": "^1.0.4",
-    "element-style": "^0.1.1"
+    "element-style": "^0.1.1",
+    "get-document": "^1.0.0",
+    "within-element": "^0.1.0"
   }
 }
